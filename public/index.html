@@ -1,0 +1,71 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Auth </title>
+  </head>
+  <body>
+    <h1>Auth</h1>
+    <p>Welcome to the auth home page! Please <a href="/login">login</a> or <a href="/register">register</a> to continue.</p>
+  </body>
+</html> 
+ -->
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Driving a RC car</title>
+    <meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<script src="js/jquery-2.2.3.min.js" ></script> 
+	<script> 
+    $(function(){
+      $(".footer").load("partials/footer.html"); 
+	   $("#home").load("partials/header.html"); 
+    });
+    </script> 
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,600' rel='stylesheet' type='text/css'>  
+  </head>
+  <body>
+    <header>
+    <div id="home"></div>
+    <div class="clear"></div>
+  </header> 
+  
+    <!--Contact Start -->
+    <div class="bodycolor">
+        <div class="setdimension">            
+        </div>
+  </div>    
+    <!--Contact End-->  
+	
+	<!-- Footer Start -->
+	<div class="footer"></div>
+    <!-- Footer End -->  
+	
+<!-- 	Pentru menu item activ -->
+	<script>
+
+	
+	$('a.menu').click(function(){
+		$('a.menu').removeClass("active");
+		$(this).addClass("active");
+	});
+
+	//scroll to specific id when click on menu 
+	 // Cache selectors
+	var lastId,
+		topMenu = $("#top-menu"),
+		topMenuHeight = topMenu.outerHeight()+15,
+		// All list items
+		menuItems = topMenu.find("a"),
+		// Anchors corresponding to menu items
+		scrollItems = menuItems.map(function(){
+		  var item = $($(this).attr("href"));
+		  if (item.length) { return item; }
+		});
+ </script>
+</body>
+</html>

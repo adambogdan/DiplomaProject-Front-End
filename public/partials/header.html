@@ -1,0 +1,32 @@
+<div class="top">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-md-3">
+            <div class="logo">
+              <a href="#"><img src="images/logo.jpg" alt="Internet of Things"></a>
+            </div>
+          </div>
+          <div class="col-sm-9 col-md-9">
+          	<div id="top-menu">
+            <nav class="mainMenu">
+              <ul class="nav">
+                <li><a class="menu" href="/">Home</a></li>
+                <li><a class="menu" href="/demo">Demo</a></li>
+                <li><a class="menu" href="/photogallery">Photo Gallery</a></li>
+                <li><a id="loggedInOut" class="menu" href="/login">Login</a></li>
+              </ul>
+			  <script>
+				var loggedUser=loggedIn();
+				if(loggedUser==null){
+					$('#loggedInOut').innerHtml('<a class="menu" href="/login">Login</a>');
+				}
+				else{
+					$('#loggedInOut').innerHtml('<a class="menu" href="/logout">Logout</a>');
+				}
+			  </script>
+            </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+ </div>
